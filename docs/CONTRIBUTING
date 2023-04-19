@@ -1,0 +1,37 @@
+# Contribuir a matematicassimple
+
+Gracias por tu interés en contribuir a este proyecto. Tu ayuda es muy apreciada.
+En este archivo veras los pasos para colaborar con este proyecto.
+
+## Reportar errores o sugerir mejoras
+
+Si encuentras un error en el código o en la documentación, o tienes una idea para mejorar el paquete, puedes abrir un issue en el [repositorio de GitHub.](https://github.com/Aldogamer01/matematicassimple/issues)
+
+Para abrir un issue, sigue estos pasos:
+
+- Ve a la pestaña Issues del repositorio y haz clic en el botón New issue.
+- Elige una de las plantillas disponibles: Bug report o Feature request. Las plantillas te ayudarán a proporcionar la información necesaria para resolver el issue.
+- Escribe un título claro y conciso que describa el problema o la sugerencia.
+- Escribe el cuerpo del issue siguiendo las instrucciones de la plantilla. Por ejemplo: los pasos para reproducir el error, el comportamiento esperado, el comportamiento real, capturas de pantalla, etc.
+- Etiqueta el issue con una o más etiquetas apropiadas. Por ejemplo: bug, enhancement, documentation, help wanted, etc.
+- Asigna el issue a ti mismo o a otro colaborador si sabes quién se va a encargar de él.
+- Haz clic en el botón Submit new issue.
+
+## Proponer cambios al código fuente
+
+Si quieres hacer cambios al código fuente del paquete, puedes crear un pull request en el [repositorio de GitHub.](https://github.com/Aldogamer01/matematicassimple/pulls)
+
+Para crear un pull request, sigue estos pasos:
+
+- Haz un fork del repositorio original a tu cuenta de GitHub. Esto creará una copia del repositorio en tu cuenta que podrás modificar libremente.
+- Crea una rama nueva en tu fork con un nombre descriptivo que indique el propósito de los cambios.
+- Haz los cambios que quieras en tu rama usando tu editor de código favorito. Asegúrate de seguir las convenciones de estilo del proyecto y de documentar tu código si es necesario.
+- Haz commit de tus cambios con un mensaje claro y conciso que explique qué has hecho y por qué.
+- Haz push de tu rama a tu fork en GitHub.
+- Ve a la pestaña Pull requests del repositorio original y haz clic en el botón New pull request.
+- Elige la rama base (normalmente main) y la rama compare (la que has creado con tus cambios).
+- Escribe un título y un cuerpo para tu pull request siguiendo las instrucciones de la plantilla. Por ejemplo: qué problema resuelve, qué función añade, cómo se puede probar, etc.
+- Etiqueta tu pull request con una o más etiquetas apropiadas. Por ejemplo: bug, enhancement, documentation, etc.
+- Solicita una revisión de tu pull request a uno o más colaboradores del proyecto.
+- Espera a que tu pull request sea revisado y aprobado. Si hay comentarios o sugerencias, responde a ellos o haz los cambios necesarios.
+- Una vez que tu pull request sea aprobado y fusionado, puedes borrar tu rama local y remota si lo deseas.

@@ -1,0 +1,29 @@
+site_name: matematicassimple
+site_description: Un paquete de Python que ofrece funciones matemáticas simples
+repo_url: https://github.com/aldogamer01/matematicassimple
+theme:
+  name: readthedocs
+nav:
+  - Inicio: index.md
+  - Funciones:
+    - Ordenar números: ordenar.md
+    - Celsius y Fahrenheit: temperatura.md
+    - Área y perímetro de figuras: geometria.md
+    - Factorial: factorial.md
+    - Fibonacci: fibonacci.md
+    - Máximo común divisor: mcd.md
+    - Número primo: primo.md
+    - Suma de números naturales: suma.md
+    - Leibniz: leibniz.md
+    - Cuadrática: cuadratica.md
+    - Raíz: raiz.md
+    - Potencia: potencia.md
+    - Taylor: taylor.md
+    - Seno: seno.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          setup_commands:
+            - import matematicassimple
