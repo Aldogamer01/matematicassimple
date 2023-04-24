@@ -10,74 +10,53 @@ def ordenar(alreves : bool, numeros : list) -> list:
     
     De lo contrario, si es de mayor a menor, usa lo siguiente:
 
-    
+
     from matematicassimple import ordenar
 
     ordenar(alreves=True, numeros=[4,1,0,9,32,51,6,2,8,43])
     '''
+    def merge_sort(numeros):
+        if len(numeros) <= 1:
+            return numeros
+        mitad = len(numeros) // 2
+        izquierda = numeros[:mitad]
+        derecha = numeros[mitad:]
+        izquierda = merge_sort(izquierda)
+        derecha = merge_sort(derecha)
+        return merge(izquierda, derecha)
+    n = len(numeros)
     if numeros == []:
-        raise ValueError("La lista no puede estar vacia")
-    elif len(numeros) == 1:
+        raise ValueError("La numeros no puede estar vacia")
+    elif n == 1:
         return numeros
     elif alreves == False:
-        restador = 0
-        acum = 0
-        while True:
-            menor = None
-            posmen = 0
-            for i in range(len(numeros) - restador - 1):
-                if menor != None:
-                    if numeros[acum] < numeros[i+acum+1] and numeros[acum] < menor:
-                        posmen = acum    
-                    elif numeros[acum] > numeros[i+acum+1] and numeros[acum+i+1] < menor:
-                        posmen = i+acum+1
-                    menor = numeros[posmen]
+        def merge(izquierda, derecha):
+            resultado = []
+            i = 0
+            j = 0
+            while i < len(izquierda) and j < len(derecha):
+                if izquierda[i] < derecha[j]:
+                    resultado.append(izquierda[i])
+                    i += 1
                 else:
-                    if numeros[acum] < numeros[i+acum+1]:
-                        posmen = acum
-                    elif numeros[acum] > numeros[i+acum+1]:
-                        posmen = i+acum+1
-                    menor = numeros[posmen]
-            if posmen != acum:
-                numeros[posmen] = numeros[acum]
-                numeros[acum] = menor
-            acum = acum + 1
-            restador = restador + 1
-            if restador == len(numeros)-1:
-                if numeros[len(numeros)-2] > numeros[len(numeros)-1]:
-                    menor = numeros[len(numeros)-1]
-                    numeros[len(numeros)-1] = numeros[len(numeros)-2]
-                    numeros[len(numeros)-2] = menor
-                break
-        return numeros   
+                    resultado.append(derecha[j])
+                    j += 1
+            resultado += izquierda[i:]
+            resultado += derecha[j:]
+            return resultado
     else:
-        restador = 0
-        acum = 0
-        while True:
-            mayor = None
-            posmay = 0
-            for i in range(len(numeros) - restador - 1):
-                if mayor != None:
-                    if numeros[acum] > numeros[i+acum+1] and numeros[acum] > mayor:
-                        posmay = acum    
-                    elif numeros[acum] < numeros[i+acum+1] and numeros[acum+i+1] > mayor:
-                        posmay = i+acum+1
-                    mayor = numeros[posmay]
+        def merge(izquierda, derecha):
+            resultado = []
+            i = 0
+            j = 0
+            while i < len(izquierda) and j < len(derecha):
+                if izquierda[i] < derecha[j]:
+                    resultado.append(derecha[j])
+                    j += 1
                 else:
-                    if numeros[acum] > numeros[i+acum+1]:
-                        posmay = acum
-                    elif numeros[acum] < numeros[i+acum+1]:
-                        posmay = i+acum+1
-                    mayor = numeros[posmay]
-            if posmay != acum:
-                numeros[posmay] = numeros[acum]
-                numeros[acum] = mayor
-            acum = acum + 1
-            restador = restador + 1
-            if restador == len(numeros)-1:
-                if numeros[len(numeros)-2] < numeros[len(numeros)-1]:
-                    mayor = numeros[len(numeros)-1]
-                    numeros[len(numeros)-1] = numeros[len(numeros)-2]
-                    numeros[len(numeros)-2] = mayor
-                break
-        return numeros 
+                    resultado.append(izquierda[i])
+                    i += 1
+            resultado += izquierda[i:]
+            resultado += derecha[j:]
+            return resultado
+    return merge_sort(numeros)

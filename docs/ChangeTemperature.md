@@ -21,8 +21,8 @@ La temperatura convertida a su otra conversion
 >>> from matematicassimple import temperatura
 >>> temperatura(conversion=1, grados=36.8)
 98.24
->>> temperatura(conversion=2, grados=85.5)
-29.72222222222222
+>>> temperatura(conversion=2, grados=93.7)
+34.28
 ```
 
 ## Referencias

@@ -15,7 +15,7 @@ def temperatura(conversion: int, grados: float) -> float:
 
     from matematicassimple import temperatura
 
-    grados = 75.9
+    grados = 93.9
 
     temperatura(conversion=2, grados=grados)
     '''

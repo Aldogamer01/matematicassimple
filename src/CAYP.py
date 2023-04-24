@@ -1,8 +1,10 @@
+from .elevado import elevado
+from .leibniz import leibniz
 def CAYP(figura: str, AP: int, lado: int = None, lado2: int = None, lado3: int = None, radio: int = None): 
     """
     Puedes calcular el area y perimetro
     de cualquier poligono regular como
-    lo es el cuadrado, rectagono, triangulo,
+    lo es el cuadrado, rectangulo, triangulo,
     circulo, pentagono, hexagono, heptagono,
     octagono, nonagono, decagono y endecagono
 
@@ -37,8 +39,8 @@ def CAYP(figura: str, AP: int, lado: int = None, lado2: int = None, lado3: int =
         if AP == 1:
             return lado*lado2
         else:
-            return lado+lado2*2
-    elif figura == 'triangulo':
+            return (lado+lado2)*2
+    elif figura == 'triangulo': 
         if AP == 1:
             return lado*lado2/2
         else:
@@ -51,9 +53,9 @@ def CAYP(figura: str, AP: int, lado: int = None, lado2: int = None, lado3: int =
         if radio == None:
             raise ValueError("Ocurrio un error al calcular el circulo, no se obtuvo el valor del radio")
         if AP == 1:
-            return 3.14*radio*radio
+            return leibniz(9999999)*elevado(al=2, numero=radio)
         else:
-            return 2*3.14*radio,
+            return 2*leibniz(9999999)*radio,
     elif figura == 'pentagono':
         if AP == 1:
             if radio == None:

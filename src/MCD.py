@@ -31,3 +31,4 @@ def maximo_comun_divisor(a: int, b:int) -> int :
                     res = lista1[i]
                     break
         return res
+MCD = maximo_comun_divisor
