@@ -23,3 +23,5 @@ Puedes ver los comandos disponibles y sus ejemplos en [la documentacion](./docs/
 Puedes ver los pasos en [CONTRIBUTING.md](./docs/CONTRIBUTING)
 ## Licencia
 Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
+## Colaboradores
+[Aldogamer01](https://github.com/aldogamer01)

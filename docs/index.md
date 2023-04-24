@@ -21,3 +21,36 @@
 
 ### Actualizacion 1.0
 Se agrego oficialmente este proyecto
+Comandos agregados:
+
+Calcular Area Y Perimetro
+
+Temperatura
+
+Cuadratica
+
+Elevado
+
+Factorial
+
+Fibonacci
+
+Leibniz
+
+MCD
+
+Ordenar
+
+Primo
+
+Raiz
+
+SDNN
+
+Seno
+
+Taylor.
+### Actualizacion 1.0.1
+Se removio la anterior actualizacion para remplazarlo por esta version debido a un error y se agrego la carpeta test.
+
+Se corrigio la funcion raiz

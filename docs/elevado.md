@@ -13,7 +13,7 @@ El resultado de la operacion
 
 ## Excepciones
 
-- `ValueError`: Si el argumento `al` es menor a 2
+- `ValueError`: Si el argumento `al` es menor a 1
 
 ## Ejemplos
 

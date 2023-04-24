@@ -1,6 +1,6 @@
-from typing import overload
 from .factorial import factorial
-def taylor(repeticiones : int) -> float:
+from .elevado import elevado
+def taylor(x : float, repeticiones : int) -> float:
     """
     La serie de Taylor es una aproximación
     de funciones mediante una serie de potencias
@@ -25,5 +25,5 @@ def taylor(repeticiones : int) -> float:
         if i == 0:
             res = 1
         else:
-            res = res + (1/factorial(i))
+            res = res + elevado(al= i, numero= x)/factorial(i)
     return res
