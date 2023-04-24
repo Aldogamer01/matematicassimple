@@ -53,4 +53,4 @@ Taylor.
 ### Actualizacion 1.0.1
 Se removio la anterior actualizacion para remplazarlo por esta version debido a un error y se agrego la carpeta test.
 
-Se corrigio la funcion raiz
+Se corrigio la funcion raiz y taylor.
